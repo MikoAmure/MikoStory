@@ -1,2 +1,2 @@
-# MikoStory
-Website komik MikoStory
+# MikoKun
+Website komik MikoKun
