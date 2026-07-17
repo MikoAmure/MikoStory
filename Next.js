@@ -1,2 +1,0 @@
-# MikoKun
-Website komik MikoKun
