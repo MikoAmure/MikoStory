@@ -6,96 +6,110 @@
 }
 
 body {
-  background: #121212;
-  color: #eee;
+  background: #f8f9fa;
+  color: #222;
   max-width: 720px;
   margin: 0 auto;
-  min-height: 100vh;
 }
 
+/* Menu Atas */
 header {
   position: sticky;
   top: 0;
-  background: #1a1a1a;
-  padding: 12px 15px;
+  background: #2d3748;
+  color: white;
+  padding: 15px;
   text-align: center;
   z-index: 99;
-  border-bottom: 1px solid #333;
 }
-
 header h1 {
-  font-size: 24px;
+  font-size: 26px;
   color: #ffd369;
 }
-
-.menu-atas {
-  margin-top: 8px;
+.nav-atas {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  font-size: 14px;
+  gap: 25px;
+  margin-top: 10px;
+  font-size: 15px;
 }
-
-.menu-atas a {
-  color: #aaa;
+.nav-atas a {
+  color: #ddd;
   text-decoration: none;
 }
-.menu-atas a:hover {
+.nav-atas a:hover {
   color: #ffd369;
+  font-weight: bold;
 }
 
+/* Judul Bagian */
+.judul-bagian {
+  padding: 20px 15px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Daftar Bab Bentuk Kartu */
 .daftar-bab {
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
 }
-
-.tombol {
-  padding: 14px;
-  background: #222;
-  color: white;
-  text-align: center;
-  border-radius: 10px;
+.kartu-bab {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-decoration: none;
-  font-weight: 500;
-  border: 1px solid #333;
+  color: inherit;
   transition: 0.2s;
 }
-.tombol:hover {
-  background: #ffd369;
-  color: #121212;
-  border-color: #ffd369;
+.kartu-bab:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.sampul-bab {
+  width: 100%;
+  height: 180px;
+  background: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 14px;
+}
+.info-bab {
+  padding: 12px;
+  text-align: center;
+  font-weight: 500;
 }
 
-.judul-halaman {
+/* Halaman Baca Komik */
+.judul-baca {
   text-align: center;
   padding: 15px;
   font-size: 18px;
-  color: #ffd369;
-}
-
-.isi-komik {
-  width: 100%;
+  color: #2d3748;
+  font-weight: bold;
 }
 .isi-komik img {
   width: 100%;
   display: block;
-  border-bottom: 2px solid #222;
 }
-
-.navigasi-bawah {
+.nav-bawah {
   display: flex;
   justify-content: space-between;
   padding: 15px;
-  border-top: 1px solid #333;
-  margin-top: 10px;
+  background: white;
+  border-top: 1px solid #ddd;
 }
-.navigasi-bawah a {
-  color: #ffd369;
+.nav-bawah a {
+  color: #2d3748;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
 }
-.navigasi-bawah a.tidak-aktif {
-  color: #444;
+.nav-bawah .nonaktif {
+  color: #bbb;
 }
